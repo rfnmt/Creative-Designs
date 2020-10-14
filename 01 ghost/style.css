@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #137180;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ghost {
+  width: 150px;
+  height: 170px;
+  background-color: #fff;
+  border-radius: 70px 70px 0 0;
+  position: relative;
+  cursor: pointer;
+  animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating {
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+.face {
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 50px);
+}
+
+.eyes {
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.eyes span {
+  width: 25px;
+  height: 25px;
+  background-color: #137180;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.ghost:hover .eyes span {
+  height: 18px;
+}
+
+.mouth {
+  width: 50px;
+  height: 25px;
+  background-color: #137180;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  transition: 0.3s linear;
+}
+
+.ghost:hover .mouth {
+  height: 15px;
+}
+
+.hands {
+  width: 190px;
+  position: absolute;
+  left: -20px;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hands span {
+  width: 20px;
+  height: 30px;
+  background-color: #fff;
+}
+
+.hands span:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+.hands span:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
+.feet {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  display: flex;
+}
+
+.feet span {
+  flex: 1;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.feet span:first-child {
+  border-radius: 0 0 20px 12px;
+}
+
+.feet span:first-child {
+  border-radius: 0 0 12px 20px;
+}
