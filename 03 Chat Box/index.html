@@ -1,0 +1,63 @@
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Box UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+  </head>
+  <body>
+    <input type="checkbox" id="controler" />
+    <label for="controler">
+      <i class="fas fa-comment-dots"></i>
+      <i class="fas fa-times"></i>
+    </label>
+    <div class="chat-box">
+      <div class="header-text">شروع گفتگو</div>
+      <div class="chat-area">
+        <div class="itial-text">
+          لطفا فرم زیر را پر کنید تا گفتگوی شما با کارشناسان مجموعه آغاز شود
+        </div>
+        <form action="#">
+          <div class="field">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="اسمتون؟"
+              required
+              oninvalid="this.setCustomValidity('لطفا اسمتون رو وارد کنید')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="field">
+            <input
+              class="form-input"
+              type="email"
+              placeholder="ایمیلتون؟"
+              required
+              oninvalid="this.setCustomValidity('لطفا ایمیلتون رو وارد کنید')"
+              oninput="setCustomValidity('')"
+            />
+          </div>
+          <div class="field textarea">
+            <textarea
+              class="form-input"
+              cols="30"
+              rows="10"
+              placeholder="امرتون ... ؟"
+              required
+              oninvalid="this.setCustomValidity('لطفا پیامتون رو اینجا بنویسید')"
+              oninput="setCustomValidity('')"
+            ></textarea>
+          </div>
+          <div class="field">
+            <button type="submit">ارسال</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

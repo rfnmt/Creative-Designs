@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Vazir;
+  src: url("ّFont/Vazir.eot");
+  src: url("Font/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Font/Vazir.woff") format("woff"),
+    url("Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  font-family: Vazir;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+label {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  background: -webkit-linear-gradient(left, #19e6e6, #0922b3);
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#controler {
+  display: none;
+}
+
+label i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label > svg.svg-inline--fa.fa-times.fa-w-11 {
+  display: none;
+}
+
+#controler:checked ~ label > svg.svg-inline--fa.fa-times.fa-w-11 {
+  animation: close-rotation 0.5s;
+  display: block;
+}
+
+label > svg.svg-inline--fa.fa-comment-dots.fa-w-16 {
+  animation: open-rotation 0.5s;
+}
+
+#controler:checked ~ label > svg.svg-inline--fa.fa-comment-dots.fa-w-16 {
+  display: none;
+}
+
+@keyframes close-rotation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes open-rotation {
+  0% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.chat-box {
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+  max-width: 400px;
+  background: #f3f3f3;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: 30px;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#controler:checked ~ .chat-box {
+  opacity: 1;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.chat-box .header-text {
+  line-height: 60px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 0 20px;
+  font-weight: 700;
+  font-size: 16pt;
+  background: -webkit-linear-gradient(left, #19e6e6, #0922b3);
+}
+
+.chat-box .itial-text {
+  color: #6e6e6e;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12pt;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.chat-box form {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #d4d4d4;
+}
+
+.chat-box form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+form .field input,
+form .field button,
+form .textarea textarea {
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+  border: 1px solid #d4d4d4;
+  outline: none;
+  border-radius: 20px;
+}
+
+form .field input::placeholder,
+form .textarea textarea::placeholder {
+  transition: all 0.3s ease-in-out;
+}
+
+form .field input:focus::placeholder,
+form .textarea textarea:focus::placeholder {
+  color: #d4d4d4;
+}
+
+form .field input:focus,
+form .textarea textarea:focus {
+  border-color: #19e6e6;
+}
+
+.chat-box form .textarea {
+  height: 100px;
+}
+
+form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.chat-box form .field button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 700;
+  background: -webkit-linear-gradient(left, #19e6e6, #0922b3);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.chat-box form .field button:active {
+  transform: scale(0.97);
+}
