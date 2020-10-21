@@ -1,0 +1,137 @@
+@font-face {
+  font-family: Vazir;
+  src: url("ّFont/Vazir.eot");
+  src: url("Font/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Font/Vazir.woff") format("woff"),
+    url("Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  font-family: Vazir;
+  direction: rtl;
+}
+
+body {
+  background: #ececec;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 350px;
+}
+
+.form .back {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 300px;
+  background: #3e3c49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form .back > div {
+  padding: 30px;
+  flex: 1;
+  color: #fff;
+}
+
+.form .back > div button {
+  padding: 10px 50px;
+  font-size: 14pt;
+  font-weight: 700;
+  border: 2px solid #fff;
+  background: #3e3c49;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form .front {
+  position: relative;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  background: #2291b3;
+  transition: all 500ms ease-in-out;
+}
+
+.form .front .sign-up {
+  display: none;
+}
+
+.form .front > div {
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.form .front .title {
+  font-size: 20pt;
+  font-weight: 700;
+}
+
+.form .front .form-element {
+  position: relative;
+  margin: 15px 0px;
+}
+
+.form .front .form-element input {
+  width: 100%;
+  padding: 10px;
+  font-size: 12pt;
+  background: #fff;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-indent: 35px;
+}
+
+.form .front .form-element i.fa {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #2291b3;
+}
+
+.form .front .form-element button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 20px;
+  background: #288104;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 14pt;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form .front .form-element a {
+  text-decoration: none;
+  color: #ececec;
+  font-size: 12pt;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.form.active .front {
+  right: 0;
+}
+
+.form.active .front .sign-up {
+  display: block;
+}
+
+.form.active .front .sign-in {
+  display: none;
+}

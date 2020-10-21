@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up & Sign-in form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <script src="Script.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="back">
+        <div>
+          <h2>حساب کاربری ندارید؟</h2>
+          <p>یکی بسازید!</p>
+          <button id="show-signup-form">ثبت نام</button>
+        </div>
+        <div>
+          <h2>حساب کاربری دارید؟</h2>
+          <p>وارد شوید!</p>
+          <button id="show-signin-form">ورود</button>
+        </div>
+      </div>
+      <div class="front">
+        <div class="sign-in">
+          <div class="title">ورود به حساب کاربری</div>
+          <div class="form-element">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="نام کاربری" />
+          </div>
+          <div class="form-element">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="رمز عبور" />
+          </div>
+          <div class="form-element">
+            <button>ورود</button>
+            <div class="form-element">
+              <a href="#">رمزتان را فراموش کرده اید؟</a>
+            </div>
+          </div>
+      </div>
+      <div class="sign-up">
+        <div class="title">ایجاد حساب کاربری</div>
+        <div class="form-element">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="نام و نام خانوادگی" />
+        </div>
+        <div class="form-element">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="ایمیل" />
+          </div>
+        <div class="form-element">
+          <i class="fa fa-lock"></i>
+          <input type="password" placeholder="رمز عبور" />
+        </div>
+        <div class="form-element">
+          <button>ورود</button>
+          <div class="form-element">
+            <a href="#">رمزتان را فراموش کرده اید؟</a>
+          </div>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
