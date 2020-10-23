@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Vazir;
+  src: url("ّFont/Vazir.eot");
+  src: url("Font/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Font/Vazir.woff") format("woff"),
+    url("Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Vazir;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  background-color: #b10000;
+  color: #fff;
+}
+
+nav a:active {
+  background: #7c0000;
+}
+
+#nav-bar {
+  width: 100%;
+  position: fixed;
+  text-align: right;
+  background: #74565685;
+}
+
+section {
+  width: 100%;
+  margin: 0;
+  padding: 100px;
+  height: 100vh;
+}
+
+p {
+  max-width: 400px;
+  font-size: 14pt;
+  text-align: justify;
+}
+
+#s1 {
+  background-image: url(pics/games.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#s2 {
+  background-image: url(pics/Dark\ Souls\ 3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+#s3 {
+  background-image: url(pics/demons-souls.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#s4 {
+  background-image: url(pics/bloodborne.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+#s5 {
+  background-image: url(pics/TLOU2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#s6 {
+  background-image: url(pics/God\ of\ War\ 4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
