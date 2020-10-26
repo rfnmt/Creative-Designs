@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="display">
+        <div id="time">12:00:00 ق.ظ</div>
+      </div>
+      <span></span>
+      <span></span>
+    </div>
+    <script>
+      setInterval(() => {
+        const time = document.querySelector("#time");
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let day_night = "ق.ظ";
+        if (hours > 12) {
+          day_night = "ب.ظ";
+        }
+        if (hours < 10) {
+          hours = "0" + hours;
+        }
+        if (minutes < 10) {
+          minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+        time.textContent =
+          hours + ":" + minutes + ":" + seconds + " " + day_night;
+      });
+    </script>
+  </body>
+</html>

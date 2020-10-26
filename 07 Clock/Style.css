@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Vazir;
+  src: url("ّFont/Vazir.eot");
+  src: url("Font/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Font/Vazir.woff") format("woff"),
+    url("Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+* {
+  font-family: Vazir;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #292929;
+}
+
+.main {
+  height: 160px;
+  width: 410px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.main .display,
+.main span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main .display {
+  z-index: 999;
+  background: #292929;
+  height: 140px;
+  width: 390px;
+  text-align: center;
+}
+
+.main .display #time {
+  font-size: 40pt;
+  font-weight: 700;
+  line-height: 150px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+
+.main span {
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  border-radius: 10px;
+}
+
+.main span:first-child {
+  filter: blur(20px);
+}
+
+.main span:last-child {
+  filter: blur(20px);
+}
