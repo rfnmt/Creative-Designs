@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <header>
+        <a href="https://octascript.com/">
+          <img src="Pics/Octa-Logo02.png" alt="" class="logo" />
+        </a>
+        <ul>
+          <li><a href="https://octascript.com/">خانه</a></li>
+          <li><a href="#">محصولات</a></li>
+          <li><a href="#">نمونه کارها</a></li>
+          <li>
+            <a href="https://octascript.com/about-octascript/">درباره ما</a>
+          </li>
+          <li><a href="https://twitter.com/Rfnmt">تماس با ما</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <div id="tlou" class="active">
+            <h2>The Last of Us</h2>
+            <p>
+              آخرین بازمانده از ما (به انگلیسی: The Last of Us) یک بازی
+              پسا-رستاخیزی در سبک اکشن ماجراجویی و ترس و بقا است که توسط شرکت
+              ناتی داگ ساخته شده و در ۱۴ ژوئن ۲۰۱۳ (۲۵ خرداد ۱۳۹۲) به‌وسیلهٔ
+              سونی کامپیوتر انترتینمنت به‌طور انحصاری برای کنسول پلی‌استیشن ۳
+              منتشر شده‌است.
+            </p>
+            <p>
+              داستان بازی در مورد تلاش دو انسان برای بقا است؛ این که چطور جوئل و
+              الی در مقابل خطرهایی که با آن مواجه می‌شوند ایستادگی کرده و
+              می‌جنگند. تروی بیکر در نقش جوئل و اشلی جانسون در نقش الی صداپیشگی
+              می‌کنند.
+            </p>
+            <a href="#">بیشتر بخوانید</a>
+          </div>
+
+          <div id="gow">
+            <h2>God of War 4</h2>
+            <p>
+              خدای جنگ (به انگلیسی: God of War) یک بازی ویدئویی در سبک
+              اکشن-ماجراجویی است که توسط استودیو سانتا مونیکا ساخته شده و در
+              تاریخ ۲۰ آوریل ۲۰۱۸ به‌طور انحصاری برای کنسول پلی‌استیشن ۴ منتشر
+              شد.
+            </p>
+            <p>
+              این هشتمین قسمت در مجموعه بازی‌های خدای جنگ به‌شمار می‌رود و
+              دنباله‌ای بر نسخهٔ خدای جنگ ۳ محسوب می‌شود و این بار به جای آنکه
+              داستان آن همانند تمامی قسمت‌ها در این مجموعه بازی بر اساس اساطیر
+              یونانی دنبال شود، در اساطیر اسکاندیناوی روایت می‌شود.
+            </p>
+            <p>
+              شخصیت اصلی بازی کماکان کریتوس است که دیگر پا به سن گذاشته و اکنون
+              صاحب پسر شده‌است. کریتوس نقش مربی و محافظ پسرش را ایفا می‌کند و در
+              طی روند بازی پسرش به او در مبارزات، اکتشافات و حل معماها کمک
+              می‌کند. سلاح اصلی کریتوس در این قسمت یک تبرزین جادویی است.
+            </p>
+            <a href="#">بیشتر بخوانید</a>
+          </div>
+
+          <div id="rdr">
+            <h2>Red Dead Redemption 2</h2>
+            <p>
+              رد دد ردمپشن ۲ یا رستگاری سرخپوست مرده ۲(به انگلیسی: Red Dead
+              Redemption 2) یک بازی ویدئویی جهان باز با مضمون وسترن در سبک
+              اکشن-ماجراجویی است که توسط شرکت راک‌استار گیمز در ۲۶ اکتبر ۲۰۱۸،
+              برای کنسول‌های پلی‌استیشن ۴ و اکس‌باکس وان ساخته و منتشر شد.
+            </p>
+            <p>
+              داستان این نسخه، وقایع پیش از نسخه اول این بازی را در بر می‌گیرد.
+              بازی در سال ۱۸۹۹ رخ می‌دهد و داستان یکی از گروه‌های یاغی از غرب
+              وحشی که گروه وندر لیند نام دارد را روایت می‌کند و بازیکن در نقش
+              یکی از اعضای این کمپ به نام آرتور مورگان بازی می‌کند.
+            </p>
+            <a href="#">بیشتر بخوانید</a>
+          </div>
+        </div>
+        <div class="imageBox">
+          <img src="pics/Ellie.png" alt="الی" class="gamePic" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="pics/thumb01.png"
+            onclick="imageChange('pics/Ellie.png'); bgColorChange('linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(11,7,7,1) 100%)'); textChange('tlou')"
+            alt="فایر فلای"
+          />
+        </li>
+        <li>
+          <img
+            src="pics/thumb02.png"
+            onclick="imageChange('pics/Kratos.png');bgColorChange('linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(150,27,29,1) 100%)'); textChange('gow')"
+            alt="گاد آو وار"
+          />
+        </li>
+        <li>
+          <img
+            src="pics/thumb03.png"
+            onclick="imageChange('pics/Arthur.png');bgColorChange('linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(233,232,61,1) 50%, rgba(201,20,0,1) 100%)'); textChange('rdr')"
+            alt="رد دد ردمپشن"
+          />
+        </li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/Rfnmt">
+            <img src="pics/Twitter.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rfnmt">
+            <img src="pics/GitHub.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rfnmt/">
+            <img src="pics/LinkedIn.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <script>
+      function imageChange(image) {
+        document.querySelector(".gamePic").src = image;
+      }
+
+      function bgColorChange(color) {
+        let mainColor = document.querySelector(".main");
+        mainColor.style.background = color;
+      }
+
+      function textChange(target) {
+        let sections = ["tlou", "gow", "rdr"];
+        sections.forEach(remove);
+        function remove(target) {
+          let element = document.getElementById(target);
+          element.classList.remove("active");
+        }
+        let element = document.getElementById(target);
+        element.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
