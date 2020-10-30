@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Vazir;
+  src: url("ّFont/Vazir.eot");
+  src: url("Font/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Font/Vazir.woff") format("woff"),
+    url("Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Vazir;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(17, 75, 99);
+}
+
+.main {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #222;
+}
+
+.main .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.main .image.p1 {
+  background: url(pics/Ellie.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+
+.main .image.p2 {
+  background: url(pics/Kratos.jpg);
+  background-size: cover;
+  clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+.main .image.p3 {
+  background: url(pics/Arthur.jpg);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+  background-size: cover;
+}
+
+.main:hover .image {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.main .image:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.image .content {
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 70%;
+  padding: 20px;
+  background: #ffffffc5;
+  border-radius: 10px 0 0 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.content p {
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+.image:hover .content {
+  bottom: 0;
+  opacity: 1;
+}
